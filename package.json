@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LambdaSchool/webdb-challenge.git"
+    "url": "git+https://github.com/cnharrison/webdb-challenge.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LambdaSchool/webdb-challenge/issues"
+    "url": "https://github.com/cnharrison/webdb-challenge/issues"
   },
-  "homepage": "https://github.com/LambdaSchool/webdb-challenge#readme",
+  "homepage": "https://github.com/cnharrison/webdb-challenge#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
