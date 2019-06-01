@@ -1,8 +1,33 @@
+exports.up = async function(knex) {
+  await knex.schema.createTable("projects", tbl => {
+    tbl.increments("id");
+    tbl
+      .string("name")
+      .unique()
+      .notNullable();
+    tbl.string("description");
+    tbl.boolean("completed");
+  });
 
-exports.up = function(knex, Promise) {
-  
+  await knex.schema.createTable("actions", tbl => {
+    tbl.increments("id");
+    tbl
+      .string("name")
+      .unique()
+      .notNullable();
+    tbl.string("description");
+    tbl.string("notes");
+    tbl.boolean("completed");
+    tbl
+      .integer("project_id")
+      .references("id")
+      .inTable("projects")
+      .onDelete("CASCADE")
+      .notNullable();
+  });
 };
 
-exports.down = function(knex, Promise) {
-  
+exports.down = async function(knex) {
+  await knex.schema.dropTableIfExists("projects");
+  await knex.schema.dropTableIfExists("actions");
 };
