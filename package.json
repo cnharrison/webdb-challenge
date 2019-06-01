@@ -1,0 +1,31 @@
+{
+  "name": "webdb-challenge",
+  "version": "1.0.0",
+  "description": "webdb sprint challenge",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/webdb-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/webdb-challenge/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/webdb-challenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.17.1",
+    "sqlite3": "^4.0.8"
+  }
+}
